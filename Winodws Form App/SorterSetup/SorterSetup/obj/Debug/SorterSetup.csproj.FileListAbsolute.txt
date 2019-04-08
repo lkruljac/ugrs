@@ -1,0 +1,11 @@
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\bin\Debug\SorterSetup.exe.config
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\bin\Debug\SorterSetup.exe
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\bin\Debug\SorterSetup.pdb
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Filter.resources
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Form1.resources
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Properties.Resources.resources
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.csproj.GenerateResource.Cache
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.exe
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.pdb
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.csprojResolveAssemblyReference.cache
+C:\Users\Luka\Desktop\Keser\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Form2.resources
