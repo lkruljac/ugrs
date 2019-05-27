@@ -28,6 +28,8 @@
 #include <SoftwareSerial.h>
 
 
+// RX, TX
+SoftwareSerial mySerial(13, 12); 
 
 void writeString(String stringData) { // Used to serially push out a String with Serial.write()
 
@@ -40,8 +42,6 @@ void writeString(String stringData) { // Used to serially push out a String with
 
 void setup() {
   Serial.begin(9600);
-  // RX, TX
-  SoftwareSerial mySerial(13, 12); 
   mySerial.begin(9600);
   pinMode(11, OUTPUT);
 }
@@ -60,7 +60,5 @@ void loop() { // run over and over
     writeString(buffer);
     
   }
-  if (Serial.available()) {
-    mySerial.write(Serial.read());
-  }
+
 }

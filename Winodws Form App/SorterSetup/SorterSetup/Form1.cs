@@ -21,7 +21,7 @@ namespace SorterSetup
         private string portName;
         private int baudRate;
         public SerialPort myPort = new SerialPort();
-        private SorterEnvironmentParameters myEnvParm = new SorterEnvironmentParameters();
+        public SorterEnvironmentParameters myEnvParm = new SorterEnvironmentParameters();
 
         public Form1()
         {
@@ -190,12 +190,22 @@ namespace SorterSetup
             {
                 x.Serialize(textWriter, output);
                 outputString = textWriter.ToString();
-                myPort.WriteLine(outputString);
+                try
+                {
+                    myPort.WriteLine(outputString);
+                }
+                catch
+                {
+                    MessageBox.Show("Serial device not connected");
+                    return;
+                }
             }
             Form2 form2 = new Form2(this);
-            form2.Show();
-            form2.loop(this);
             this.Hide();
+
+            form2.Show();
+            //form2.loop(this);
+
 
 
         }

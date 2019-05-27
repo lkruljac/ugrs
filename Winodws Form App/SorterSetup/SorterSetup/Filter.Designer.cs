@@ -151,6 +151,7 @@ namespace SorterSetup
             this.checkedListBoxColor.Name = "checkedListBoxColor";
             this.checkedListBoxColor.Size = new System.Drawing.Size(120, 94);
             this.checkedListBoxColor.TabIndex = 0;
+            
             // 
             // Filter
             // 
