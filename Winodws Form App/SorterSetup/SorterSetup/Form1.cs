@@ -22,7 +22,7 @@ namespace SorterSetup
         private int baudRate;
         public SerialPort myPort = new SerialPort();
         public SorterEnvironmentParameters myEnvParm = new SorterEnvironmentParameters();
-
+        public string outStr;
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace SorterSetup
             //myEnvParm.makeXml();
             flowLayoutPanelFilters.Controls.Add(new Filter(flowLayoutPanelFilters.Controls.Count, myEnvParm));
         }
-
+         /*
         private void button1_Click(object sender, EventArgs e)
         {
             if(myPort.IsOpen == false)
@@ -49,7 +49,7 @@ namespace SorterSetup
             }
             counter++;
         }
-
+           */
         private void SetComboBoxPorts()
         {
 
@@ -176,15 +176,47 @@ namespace SorterSetup
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            UserCriterium output =new UserCriterium();
+            UserCriterium output = new UserCriterium();
             FilterData myFilter = new FilterData();
-            string outputString;
+            output.eleseConteiner = (int)this.numericUpDownElseConteiner.Value;
             foreach (Filter filter in flowLayoutPanelFilters.Controls)
             {
                 myFilter.Fill(filter);
-                output.filters.Add(myFilter);
+                //ova linija ispod ne radi, pregazi sve elemente s novim, ne kužim, 
+                //bez nje i metoda UserCtiteriumToSTMString(UserCriterium output) pada u vodu
+                
+                //output.filters.Add(myFilter);
+
+                //obilazim to ovako:
+                outStr = outStr + myFilter.colors.Count.ToString() + ",";
+                foreach (string color in myFilter.colors)
+                {
+                    outStr = outStr + color + ",";
+                }
+                outStr = outStr + myFilter.shapes.Count.ToString() + ",";
+                foreach (string shape in myFilter.shapes)
+                {
+                    outStr = outStr + shape + ",";
+                }
+                outStr = outStr + myFilter.conteinerNumber.ToString() + ",";
+                outStr = outStr + myFilter.minWeight.ToString() + ",";
+                outStr = outStr + myFilter.maxWeight.ToString() + "\r\n";
             }
-            output.eleseConteiner = (int)this.numericUpDownElseConteiner.Value;
+
+            outStr = outStr + "ElseCont:" + output.eleseConteiner.ToString() + "\r\n";
+           
+
+          
+
+            /*
+            for ( int i = 0; i< flowLayoutPanelFilters.Controls.Count; i++)
+            {
+                myFilter.Fill(f(Filter)lowLayoutPanelFilters.Controls[i]);
+            }
+            */
+        
+            //XML Verzija
+            /*
             System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(output.GetType());
             using (System.IO.StringWriter textWriter = new StringWriter())
             {
@@ -200,14 +232,67 @@ namespace SorterSetup
                     return;
                 }
             }
+            */
+
+
+
+            //String verzija
+                                  
+            using (System.IO.StringWriter textWriter = new StringWriter())
+            {
+
+                //ovdje objket "UserCriterium output" pretvoriti u string(vjerojatno
+                //neki multiline string, i pohraniti ga u "outputSting 
+                //outputString = UserCtiteriumToSTMString(output);
+                try
+                {
+                    //UOCI OVO
+                    //###########################
+                    //####### VIDI ME ###########
+                    //###########################
+
+                    //uncoment line below when using UART
+                    //myPort.WriteLine(outStr);
+
+                    //when debuging without STEM use this:
+                    MessageBox.Show(outStr);
+                }
+                catch
+                {
+                    MessageBox.Show("Serial device not connected");
+                    return;
+                }
+            }
             Form2 form2 = new Form2(this);
             this.Hide();
 
             form2.Show();
             //form2.loop(this);
+        }
 
-
-
+        //Metoda koja pretvara poklikano u string za STM
+        //Ipak ne koristim, jer otuput.filters lista ne ispadne dobro..
+        public string UserCtiteriumToSTMString(UserCriterium output)
+        {
+            string outStr="";
+            foreach(FilterData filter in output.filters)
+            {
+                outStr = outStr + filter.colors.Count.ToString()+",";
+                foreach(string color in filter.colors)
+                {
+                    outStr = outStr + color + ",";
+                }
+                outStr = outStr + filter.shapes.Count.ToString() + ",";
+                foreach (string shape in filter.shapes)
+                {
+                    outStr = outStr + shape + ",";
+                }
+                outStr = outStr + filter.conteinerNumber.ToString() + ",";
+                outStr = outStr + filter.minWeight.ToString() + ",";
+                outStr = outStr + filter.maxWeight.ToString() + "\r\n";
+            }
+            outStr = outStr + "ElseCont:" + output.eleseConteiner.ToString() + "\r\n";
+            return outStr;
         }
     }
 }

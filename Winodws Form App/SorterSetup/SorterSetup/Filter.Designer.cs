@@ -236,7 +236,7 @@ namespace SorterSetup
         public List<string> getColors()
         {
             List<string> checkedColors = new List<string>();
-            foreach (object itemChecked in checkedListBoxColor.CheckedItems)
+            foreach (object itemChecked in this.checkedListBoxColor.CheckedItems)
             {
                 checkedColors.Add(itemChecked.ToString());
             }
@@ -246,7 +246,7 @@ namespace SorterSetup
         public List<string> getShapes()
         {
             List<string> checkedShapes = new List<string>();
-            foreach (object itemChecked in checkedListBoxShapes.CheckedItems)
+            foreach (object itemChecked in this.checkedListBoxShapes.CheckedItems)
             {
                 checkedShapes.Add(itemChecked.ToString());
             }
@@ -255,15 +255,15 @@ namespace SorterSetup
 
         public decimal getContainer()
         {
-            return numericUpDownContainer.Value;
+            return this.numericUpDownContainer.Value;
         }
         public decimal getMax()
         {
-            return numericUpDownMax.Value;
+            return this.numericUpDownMax.Value;
         }
         public decimal getMin()
         {
-            return numericUpDownMin.Value;
+            return this.numericUpDownMin.Value;
         }
         #endregion
 

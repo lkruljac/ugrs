@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.comboBoxPorts = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxBaudRate = new System.Windows.Forms.TextBox();
@@ -36,7 +35,6 @@
             this.buttonConnect = new System.Windows.Forms.Button();
             this.labelConnectedFlag = new System.Windows.Forms.Label();
             this.buttonRefreshPorts = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2Disconnect = new System.Windows.Forms.Button();
             this.buttonAddAnotherFilter = new System.Windows.Forms.Button();
             this.flowLayoutPanelFilters = new System.Windows.Forms.FlowLayoutPanel();
@@ -49,16 +47,6 @@
             this.groupBoxConnection.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(15, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Change state";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBoxPorts
             // 
@@ -121,13 +109,6 @@
             this.buttonRefreshPorts.Text = "Refresh ports list";
             this.buttonRefreshPorts.UseVisualStyleBackColor = true;
             this.buttonRefreshPorts.Click += new System.EventHandler(this.buttonRefreshPorts_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(105, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 20);
-            this.textBox1.TabIndex = 8;
             // 
             // button2Disconnect
             // 
@@ -225,8 +206,6 @@
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.flowLayoutPanelFilters);
             this.Controls.Add(this.buttonAddAnotherFilter);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -236,13 +215,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBoxPorts;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxBaudRate;
@@ -250,7 +226,6 @@
         private System.Windows.Forms.Button buttonConnect;
         private System.Windows.Forms.Label labelConnectedFlag;
         private System.Windows.Forms.Button buttonRefreshPorts;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2Disconnect;
         private System.Windows.Forms.Button buttonAddAnotherFilter;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelFilters;
