@@ -5,6 +5,9 @@
     <string>Yelow</string>
     <string>Green</string>
     <string>Gray</string>
+	<string>ProjectFolder:"WinodwsFormApp\SorterSetup\SorterSetup\Resource\encParm.xml\"</string>
+	<string>"Tu mogu urediti sta mi sve treba"</string>
+	
   </colors>
   <shapes>
     <string>Cube</string>

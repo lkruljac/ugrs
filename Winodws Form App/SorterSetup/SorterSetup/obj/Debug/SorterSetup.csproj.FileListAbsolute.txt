@@ -33,3 +33,16 @@ C:\Users\lukaHP\Desktop\ugrs-master\ugrs-master\Winodws Form App\SorterSetup\Sor
 C:\Users\lukaHP\Desktop\ugrs-master\ugrs-master\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.csproj.CoreCompileInputs.cache
 C:\Users\lukaHP\Desktop\ugrs-master\ugrs-master\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.exe
 C:\Users\lukaHP\Desktop\ugrs-master\ugrs-master\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.pdb
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\bin\Debug\SorterSetup.exe.config
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\bin\Debug\SorterSetup.exe
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\bin\Debug\SorterSetup.pdb
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.csprojAssemblyReference.cache
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Container.resources
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Filter.resources
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Form1.resources
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Form2.resources
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.Properties.Resources.resources
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.csproj.GenerateResource.cache
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.csproj.CoreCompileInputs.cache
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.exe
+C:\Users\lukaHP\Desktop\keser\ugrs\Winodws Form App\SorterSetup\SorterSetup\obj\Debug\SorterSetup.pdb
